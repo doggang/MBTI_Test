@@ -1,0 +1,68 @@
+body{
+    background-image: url('../../img/paper.jpg');
+    background-size: 50%;
+}
+.wrap{
+    margin: 50px 0 150px;
+    position: relative;
+    left: 50%;
+    margin-left: calc(-17.5%);
+    width: 35%;
+    height: 600px;
+    border: 1px solid white;
+    background-color: #88d3c2;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.content{
+    position: relative;
+    top :50px;
+    font-size: 20px;
+}
+
+.start{
+    background:#fff;
+    color:#1AAB8A;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    width: 50%;
+    line-height: 60px;
+    left: 50%;
+    margin:180px 0 0 -25%;
+  }
+  .start:hover{
+    background:#1AAB8A;
+    color:#fff;
+  }
+  .start:before,.start:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: white;
+    transition:400ms ease all;
+  }
+  .start:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .start:hover:before,.start:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header.js';
+import Nav from './components/nav/Nav.js';
+import Article from './components/article/Article.js';
+import Footer from './components/footer/Footer.js';
+import {useState} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  const [mode,setMode] = useState('START');
+  let content = null; //첫 페이지 안에 내용
+  console.log(mode);
+
+  //MODE 변경--------------------------------------
+  if(mode==='START'){
+      content= <Article onChangeMode={function(){
+        setMode('TEST');
+        alert('TEST로 바뀝니다');
+      }} />
+  }else if(mode==='TEST'){
+    content=<Article onChangeMode={function(){
+      setMode('START');
+      alert('START로 바뀝니다');
+    }} />
+  }
+  //------------------------------------------------
+  return(
+    <div>
+      <Header/>
+      <Nav />
+      {content}
+      <Footer />
     </div>
   );
 }
