@@ -3,7 +3,7 @@ body{
     background-size: 50%;
 }
 .wrap{
-    margin: 50px 0 150px;
+    margin: 50px 0 30px;
     position: relative;
     left: 50%;
     margin-left: calc(-17.5%);
@@ -17,6 +17,7 @@ body{
 }
 
 .title{
+    margin-top: 100px;
     text-align: center;
     font-size: 40px;
 }
