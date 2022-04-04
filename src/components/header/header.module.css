@@ -1,0 +1,28 @@
+.header{
+    height: 75px;
+    width: 340px;
+    display: flex;
+    margin: 20px 0 0 40px;
+    color: #35c09d;
+    padding: 10px;
+    border-radius: 10px;    
+    text-decoration: none;
+}
+
+.header:hover{
+    background-color: #35c09d;
+    color: white;
+    transition-duration: 0.3s;
+}
+.img{
+    height: 50px;
+    width: 50px;
+}
+.title{
+    font-size: 32px;
+    margin: 3px 0 0 13px;
+    font-weight: 700;
+}
+.header:hover{
+    cursor: pointer;
+}

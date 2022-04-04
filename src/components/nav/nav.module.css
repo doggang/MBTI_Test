@@ -1,0 +1,19 @@
+.top{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #35c09d;
+    color: #35c09d;
+    position: fixed;
+    right: 0px;
+    bottom: 30%;
+    font-size: 20px;
+    line-height: 65px;
+    text-align: center;
+    text-decoration: none;
+}
+.top:hover{
+    background-color: #35c09d;
+    color: white;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
