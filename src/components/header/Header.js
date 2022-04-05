@@ -4,8 +4,7 @@ import styles from './header.module.css';
 function Header(props){
   return(
     <header>
-      <a className={styles.header} onClick={function(e){
-        e.preventDefault();
+      <a href='../../../public/index.html' className={styles.header} onClick={function(e){
         props.onChangeMode();
       }}>
         <img className={styles.img} src={headerImg} alt="" />
