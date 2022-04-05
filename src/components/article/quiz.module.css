@@ -26,6 +26,7 @@
     align-items: center;
     flex-wrap: nowrap;
     text-align: center;
+    padding: 20px;
 }
 .container{
     display: grid;
