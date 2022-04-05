@@ -1,0 +1,13 @@
+.wrap{
+    margin: 50px 0 30px;
+    position: relative;
+    left: 50%;
+    margin-left: calc(-17.5%);
+    width: 35%;
+    height: 600px;
+    border: 1px solid white;
+    background-color: #88d3c2;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
